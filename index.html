@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Tropical Bliss Resort</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 class="logo">
+          <img src="logo.jpg" alt="Tropical Bliss Logo" class="logo-img" />
+          Tropical Bliss
+        </h1>
+        <button
+          class="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <ul class="nav-menu" id="navMenu" role="menu">
+          <li role="menuitem"><a href="#about">About</a></li>
+          <li role="menuitem"><a href="#amenities">Amenities</a></li>
+          <li role="menuitem"><a href="#booking">Book</a></li>
+          <li role="menuitem"><a href="#testimonials">Testimonials</a></li>
+          <li role="menuitem"><a href="#gallery">Gallery</a></li>
+          <li role="menuitem"><a href="#contact">Location</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Welcome to Tropical Bliss</h2>
+        <p>Where paradise meets luxury</p>
+        <a href="#booking" class="btn">Book Now</a>
+      </section>
+      <section id="about" class="section about-section">
+        <h2>About Us</h2>
+        <p>
+          Nestled along the pristine shores, Tropical Bliss is your ultimate
+          getaway to serenity and elegance. Our resort blends the charm of
+          coastal beauty with modern luxury—offering stylish suites,
+          personalized service, gourmet dining, and unforgettable experiences.
+          Whether you're looking to unwind, explore, or celebrate, Tropical
+          Bliss welcomes you with open arms.
+        </p>
+      </section>
+
+      <section id="amenities" class="section amenities-section">
+        <h2>Our Amenities</h2>
+        <ul class="amenities-grid">
+          <li class="amenity-item">
+            <figure>
+              <figcaption>🏖️</figcaption>
+              <h3>Beach Access</h3>
+              <p>
+                Step out of your room and into the warm sand with direct beach
+                access.
+              </p>
+            </figure>
+          </li>
+          <li class="amenity-item">
+            <figure>
+              <figcaption>🏊‍♂️</figcaption>
+              <h3>Infinity Pool</h3>
+              <p>Enjoy a refreshing swim with a panoramic view of the ocean.</p>
+            </figure>
+          </li>
+          <li class="amenity-item">
+            <figure>
+              <figcaption>🍽️</figcaption>
+              <h3>Fine Dining</h3>
+              <p>
+                Indulge in gourmet meals prepared by top chefs with fresh local
+                ingredients.
+              </p>
+            </figure>
+          </li>
+          <li class="amenity-item">
+            <figure>
+              <figcaption>💆‍♀️</figcaption>
+              <h3>Spa & Wellness</h3>
+              <p>
+                Relax and rejuvenate with personalized spa treatments and yoga
+                sessions.
+              </p>
+            </figure>
+          </li>
+          <li class="amenity-item">
+            <figure>
+              <figcaption>🛏️</figcaption>
+              <h3>Luxury Suites</h3>
+              <p>
+                Experience comfort and elegance in our beautifully designed
+                suites.
+              </p>
+            </figure>
+          </li>
+          <li class="amenity-item">
+            <figure>
+              <figcaption>🌅</figcaption>
+              <h3>Sunset Views</h3>
+              <p>
+                Catch breathtaking sunsets every evening from your private
+                balcony.
+              </p>
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <section id="booking" class="section">
+        <h2>Book a Room or Service</h2>
+        <form id="bookingForm">
+          <input type="text" name="fullName" placeholder="Full Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input
+            name="visitors"
+            type="text"
+            placeholder="Number of Visitors"
+            required
+          />
+          <input type="date" name="checkIn" placeholder="Check-in" required />
+          <input type="date" name="checkOut" placeholder="Check-out" required />
+          <select name="roomType" required>
+            <option value="">Select Room Type</option>
+            <option>Deluxe Suite</option>
+            <option>Ocean View</option>
+            <option>Standard Room</option>
+          </select>
+          <select name="service" required>
+            <option value="">Select Service</option>
+            <option>Spa</option>
+            <option>Dining</option>
+            <option>Event Booking</option>
+          </select>
+
+          <button type="submit">Submit</button>
+          <p id="bookingMessage"></p>
+        </form>
+      </section>
+
+      <section id="testimonials" class="section">
+        <h2>What Our Guests Say</h2>
+        <section class="carousel">
+          <blockquote class="testimonial">
+            <img
+              src="https://i.pravatar.cc/100?img=5"
+              alt="Sarah"
+              class="profile-img"
+            />
+            <p>“Amazing experience!”</p>
+            <cite>– Sarah</cite>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <img
+              src="https://i.pravatar.cc/100?img=7"
+              alt="John"
+              class="profile-img"
+            />
+            <p>“Five stars all the way!”</p>
+            <cite>– John</cite>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <img
+              src="https://i.pravatar.cc/100?img=12"
+              alt="Aisha"
+              class="profile-img"
+            />
+            <p>“Unforgettable moments.”</p>
+            <cite>– Aisha</cite>
+          </blockquote>
+        </section>
+      </section>
+
+      <section id="gallery" class="section">
+        <h2>Our Gallery</h2>
+        <section class="gallery-lightbox">
+          <article class="gallery-item">
+            <figure>
+              <img
+                src="oceanview.jpg"
+                alt="Luxury Room with Ocean View"
+                class="lightbox-img"
+              />
+              <figcaption>
+                Luxury Room with Ocean View - Experience comfort and elegance in
+                our deluxe rooms with breathtaking views of the ocean.
+              </figcaption>
+            </figure>
+          </article>
+          <article class="gallery-item">
+            <figure>
+              <img
+                src="sunset.jpg"
+                alt="Beachfront Resort Sunset"
+                class="lightbox-img"
+              />
+              <figcaption>
+                Beachfront Resort Sunset - Watch the sun set over the horizon,
+                creating a serene and peaceful atmosphere for our guests.
+              </figcaption>
+            </figure>
+          </article>
+          <article class="gallery-item">
+            <figure>
+              <img
+                src="spa.jpg"
+                alt="Spa and Wellness Center"
+                class="lightbox-img"
+              />
+              <figcaption>
+                Spa and Wellness Center - Indulge in luxurious spa treatments
+                designed to rejuvenate your body and soul.
+              </figcaption>
+            </figure>
+          </article>
+          <article class="gallery-item">
+            <figure>
+              <img
+                src="dining.jpg"
+                alt="Fine Dining Experience"
+                class="lightbox-img"
+              />
+              <figcaption>
+                Fine Dining Experience - Savor exquisite meals prepared by
+                world-class chefs, offering an unforgettable culinary journey.
+              </figcaption>
+            </figure>
+          </article>
+        </section>
+      </section>
+      <section id="contact" class="section">
+        <h2>Find Us</h2>
+        <address>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            <strong>Location:</strong> 123 Paradise Lane, Beach City, Tropical
+            Island
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            <strong>Phone:</strong>
+            <a href="tel:+254790342156">+254-790-342-156</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            <strong>Email:</strong>
+            <a href="mailto:info@tropicalbliss.com">
+              munenecollins.dev@gmail.com</a
+            >
+          </p>
+        </address>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.32335424496!2d36.84739685000001!3d-1.3032089500000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1744704341616!5m2!1sen!2ske"
+          width="100%"
+          height="300"
+          style="border: 0; border-radius: 8px"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Tropical Bliss Resort. All rights reserved.</p>
+      <nav class="socials">
+        <a href="https://www.facebook.com/tropicalbliss" target="_blank"
+          ><i class="fab fa-facebook"></i>Facebook</a
+        >
+        <a href="https://twitter.com/tropicalbliss" target="_blank"
+          ><i class="fab fa-twitter"></i>Twitter</a
+        >
+        <a href="https://www.instagram.com/tropicalbliss" target="_blank"
+          ><i class="fab fa-instagram"></i>Instagram</a
+        >
+        <a href="https://www.linkedin.com/company/tropicalbliss" target="_blank"
+          ><i class="fab fa-linkedin"></i>LinkedIn</a
+        >
+      </nav>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("CcAtz8ydslI-FLsgP"); // Replace with your own Public Key
+      })();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
