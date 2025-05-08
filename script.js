@@ -19,3 +19,31 @@
 
   setInterval(showNextTestimonial, 4000); // 4 seconds
 
+
+
+
+
+  const form = document.getElementById("booking-form");
+  const popup = document.getElementById("confirmation-popup");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+    })
+      .then(response => {
+        if (response.ok) {
+          form.reset();
+          popup.style.display = "block";
+          setTimeout(() => popup.style.display = "none", 7000);
+        } else {
+          alert("There was an error. Please try again.");
+        }
+      })
+      .catch(() => {
+        alert("Network error. Please try again.");
+      });
+  });
+
