@@ -3,306 +3,600 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
     <title>Tropical Bliss Resort</title>
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <h1 class="logo">
-          <img src="logo.jpg" alt="Tropical Bliss Logo" class="logo-img" />
-          Tropical Bliss
-        </h1>
-        <button
-          class="hamburger"
-          aria-label="Toggle menu"
-          aria-expanded="false"
-        >
-          ☰
+        <a href="#" class="logo">Tropical Bliss</a>
+        <button class="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <ul class="nav-menu" id="navMenu" role="menu">
-          <li role="menuitem"><a href="#about">About</a></li>
-          <li role="menuitem"><a href="#amenities">Amenities</a></li>
-          <li role="menuitem"><a href="#booking">Book</a></li>
-          <li role="menuitem"><a href="#testimonials">Testimonials</a></li>
-          <li role="menuitem"><a href="#gallery">Gallery</a></li>
-          <li role="menuitem"><a href="#contact">Location</a></li>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#accommodation">Accommodation</a></li>
+          <li><a href="#cuisines">Meals</a></li>
+          <li><a href="#booking">Book Now</a></li>
+          <li><a href="#footer-contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
-        <h2>Welcome to Tropical Bliss</h2>
-        <p>Where paradise meets luxury</p>
-        <a href="#booking" class="btn">Book Now</a>
-      </section>
-      <section id="about" class="section about-section">
-        <h2>About Us</h2>
-        <p>
-          Nestled along the pristine shores, Tropical Bliss is your ultimate
-          getaway to serenity and elegance. Our resort blends the charm of
-          coastal beauty with modern luxury—offering stylish suites,
-          personalized service, gourmet dining, and unforgettable experiences.
-          Whether you're looking to unwind, explore, or celebrate, Tropical
-          Bliss welcomes you with open arms.
-        </p>
+      <section id="hero">
+        <article class="hero-content">
+          <h1>Welcome to Tropical Bliss Resort</h1>
+          <p>
+            Experience luxury, tranquility, and adventure — all in one place.
+          </p>
+          <a href="#booking" class="btn-primary">Book Your Stay</a>
+        </article>
       </section>
 
-      <section id="amenities" class="section amenities-section">
-        <h2>Our Amenities</h2>
-        <ul class="amenities-grid">
-          <li class="amenity-item">
-            <figure>
-              <figcaption>🏖️</figcaption>
-              <h3>Beach Access</h3>
-              <p>
-                Step out of your room and into the warm sand with direct beach
-                access.
-              </p>
-            </figure>
+      <section id="services">
+        <h2>Our Signature Services</h2>
+        <p class="section-intro">
+          Designed to indulge your senses and elevate your stay.
+        </p>
+
+        <ul class="services-grid">
+          <li>
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636580/luxury_rooms.a_bxrw1m.webp"
+              alt="Luxury Rooms"
+              loading="lazy"
+            />
+            <h3>Luxury Rooms</h3>
+            <p>
+              Spacious, ocean-view suites with elegant finishes and 24/7
+              concierge service.
+            </p>
           </li>
-          <li class="amenity-item">
-            <figure>
-              <figcaption>🏊‍♂️</figcaption>
-              <h3>Infinity Pool</h3>
-              <p>Enjoy a refreshing swim with a panoramic view of the ocean.</p>
-            </figure>
+          <li>
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636576/fine_dining.a_bxojur.webp"
+              alt="Fine Dining"
+              loading="lazy"
+            />
+            <h3>Fine Dining</h3>
+            <p>
+              World-class cuisine crafted by top chefs using fresh, local
+              ingredients.
+            </p>
           </li>
-          <li class="amenity-item">
-            <figure>
-              <figcaption>🍽️</figcaption>
-              <h3>Fine Dining</h3>
-              <p>
-                Indulge in gourmet meals prepared by top chefs with fresh local
-                ingredients.
-              </p>
-            </figure>
+          <li>
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636599/spa_and_wellness.a_bhxy90.webp"
+              alt="Spa & Wellness"
+              loading="lazy"
+            />
+            <h3>Spa & Wellness</h3>
+            <p>
+              Rejuvenate your body and soul with signature massages and serene
+              surroundings.
+            </p>
           </li>
-          <li class="amenity-item">
-            <figure>
-              <figcaption>💆‍♀️</figcaption>
-              <h3>Spa & Wellness</h3>
-              <p>
-                Relax and rejuvenate with personalized spa treatments and yoga
-                sessions.
-              </p>
-            </figure>
-          </li>
-          <li class="amenity-item">
-            <figure>
-              <figcaption>🛏️</figcaption>
-              <h3>Luxury Suites</h3>
-              <p>
-                Experience comfort and elegance in our beautifully designed
-                suites.
-              </p>
-            </figure>
-          </li>
-          <li class="amenity-item">
-            <figure>
-              <figcaption>🌅</figcaption>
-              <h3>Sunset Views</h3>
-              <p>
-                Catch breathtaking sunsets every evening from your private
-                balcony.
-              </p>
-            </figure>
+          <li>
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636575/island_activities.a_qbkdts.webp"
+              alt="Island Activities"
+              loading="lazy"
+            />
+            <h3>Island Activities</h3>
+            <p>
+              Snorkeling, kayaking, yoga, and cultural excursions to keep you
+              inspired.
+            </p>
           </li>
         </ul>
       </section>
-      <section id="booking" class="section">
-        <h2>Book a Room or Service</h2>
-        <form id="bookingForm">
-          <input type="text" name="fullName" placeholder="Full Name" required />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-          />
-          <input type="tel" name="phone" placeholder="Phone Number" required />
-          <input
-            name="visitors"
-            type="text"
-            placeholder="Number of Visitors"
-            required
-          />
-          <input type="date" name="checkIn" placeholder="Check-in" required />
-          <input type="date" name="checkOut" placeholder="Check-out" required />
-          <select name="roomType" required>
-            <option value="">Select Room Type</option>
-            <option>Deluxe Suite</option>
-            <option>Ocean View</option>
-            <option>Standard Room</option>
-          </select>
-          <select name="service" required>
-            <option value="">Select Service</option>
-            <option>Spa</option>
-            <option>Dining</option>
-            <option>Event Booking</option>
-          </select>
 
-          <button type="submit">Submit</button>
-          <p id="bookingMessage"></p>
+      <section id="accommodation">
+        <h2>Accommodation</h2>
+        <p class="section-intro">
+          Discover our exquisite rooms designed for comfort, luxury, and
+          breathtaking views.
+        </p>
+
+        <div class="rooms-grid">
+          <article class="room-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636574/deluxe_ocean_view.a_a7rycw.webp"
+              alt="Deluxe Ocean View Room"
+              loading="lazy"
+            />
+            <div class="room-info">
+              <h3>Deluxe Ocean View</h3>
+              <p>
+                King-size bed, private balcony, sea view, complimentary
+                breakfast.
+              </p>
+              <span class="price">Ksh 3500/night</span>
+              <a href="#booking" class="btn-secondary">Book Now</a>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636602/private_villa.a_smrp1w.webp"
+              alt="Private Villa"
+              loading="lazy"
+            />
+            <div class="room-info">
+              <h3>Private Villa</h3>
+              <p>
+                Secluded space with pool, butler service, perfect for romantic
+                getaways.
+              </p>
+              <span class="price">Ksh 6000/night</span>
+              <a href="#booking" class="btn-secondary">Book Now</a>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636574/family_suite.a_fdy8b9.webp"
+              alt="Family Suite"
+              loading="lazy"
+            />
+            <div class="room-info">
+              <h3>Family Suite</h3>
+              <p>
+                Spacious two-bedroom suite, living area, ideal for families or
+                groups.
+              </p>
+              <span class="price">Ksh 4500/night</span>
+              <a href="#booking" class="btn-secondary">Book Now</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="cuisines">
+        <h2>African Cuisines</h2>
+        <p class="section-intro">
+          Indulge in authentic African flavors from various regions.
+        </p>
+
+        <section class="cuisines-scroll">
+          <article class="cuisine-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636581/jollof_rice.a_kvrvt3.webp"
+              alt="Jollof Rice"
+              loading="lazy"
+            />
+            <h3>Jollof Rice (Nigeria)</h3>
+            <p>
+              Aromatic rice dish with tomato sauce, spices, and grilled chicken
+              or fish.
+            </p>
+          </article>
+
+          <article class="cuisine-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636572/bunny_chow.a_awrevh.webp"
+              alt="Bunny Chow"
+              loading="lazy"
+            />
+            <h3>Bunny Chow (South Africa)</h3>
+            <p>
+              Delicious curry served in a hollowed-out bread loaf. A must-try
+              comfort food.
+            </p>
+          </article>
+
+          <article class="cuisine-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636590/injera.a_zdt9x9.webp"
+              alt="Injera"
+              loading="lazy"
+            />
+            <h3>Injera (Ethiopia)</h3>
+            <p>Soft sour flatbread served with spicy stews and vegetables.</p>
+          </article>
+
+          <article class="cuisine-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636570/couscous.a_rhkla7.webp"
+              alt="Couscous"
+              loading="lazy"
+            />
+            <h3>Couscous (Morocco)</h3>
+            <p>
+              Fluffy semolina dish served with vegetables, lamb, or chicken.
+            </p>
+          </article>
+
+          <article class="cuisine-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636598/piripiri.a_ygvxwi.webp"
+              alt="Piri Piri Chicken"
+              loading="lazy"
+            />
+            <h3>Piri Piri Chicken (Mozambique)</h3>
+            <p>
+              Grilled chicken marinated in spicy piri piri sauce, served with
+              sides.
+            </p>
+          </article>
+
+          <article class="cuisine-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636607/sadza.a_xqnks7.webp"
+              alt="Sadza"
+              loading="lazy"
+            />
+            <h3>Sadza (Zimbabwe)</h3>
+            <p>Starchy cornmeal dish served with hearty stews or vegetables.</p>
+          </article>
+
+          <article class="cuisine-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636567/brochettes.a_hlbd0x.webp"
+              alt="Brochettes"
+              loading="lazy"
+            />
+            <h3>Brochettes (Rwanda)</h3>
+            <p>
+              Grilled skewers of marinated meat, usually served with a side of
+              fries.
+            </p>
+          </article>
+        </section>
+      </section>
+      <!--Special Pcakeges-->
+      <section id="packages">
+        <h2>Special Packages</h2>
+        <p class="section-intro">
+          Tailored experiences to make your stay memorable and unique.
+        </p>
+
+        <article class="packages-wrapper">
+          <article class="package-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636597/romantic_getaway.a_tn3u4r.webp"
+              alt="Romantic Getaway Package"
+              loading="lazy"
+            />
+            <div class="package-info">
+              <h3>Romantic Getaway</h3>
+              <p>
+                2 nights in a sea-view suite, candlelight dinner, couple's
+                massage, and a sunset cruise.
+              </p>
+              <span class="package-price">Ksh 45,000</span>
+              <a
+                class="book-btn"
+                href="https://wa.me/254712345678?text=I'm%20interested%20in%20the%20Romantic%20Getaway%20package"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </article>
+
+          <article class="package-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636589/family_adventure.a_xi5llz.webp"
+              alt="Family Adventure Package"
+              loading="lazy"
+            />
+            <div class="package-info">
+              <h3>Family Adventure</h3>
+              <p>
+                3 nights, family suite, beach games, nature walk, and kids' club
+                access.
+              </p>
+              <span class="package-price">Ksh 65,000</span>
+              <a
+                class="book-btn"
+                href="https://wa.me/254712345678?text=I'd%20like%20to%20book%20the%20Family%20Adventure%20package"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </article>
+
+          <article class="package-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636606/wellness_retreat.a_hnehyg.webp"
+              alt="Wellness Retreat Package"
+              loading="lazy"
+            />
+            <div class="package-info">
+              <h3>Wellness Retreat</h3>
+              <p>
+                Yoga, spa treatments, detox meals, and private coaching
+                sessions.
+              </p>
+              <span class="package-price">Ksh 55,000</span>
+              <a
+                class="book-btn"
+                href="https://wa.me/254712345678?text=I'm%20interested%20in%20the%20Wellness%20Retreat%20package"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </article>
+
+          <article class="package-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636608/team_building.a_dljvqj.webp"
+              alt="Corporate Escape Package"
+              loading="lazy"
+            />
+            <div class="package-info">
+              <h3>Corporate Escape</h3>
+              <p>
+                Team-building activities, meals, excursions, and conference
+                space.
+              </p>
+              <span class="package-price">Ksh 80,000</span>
+              <a
+                class="book-btn"
+                href="https://wa.me/254712345678?text=I'd%20like%20to%20book%20the%20Corporate%20Escape%20package"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </article>
+        </article>
+      </section>
+
+      <!--Booking Section-->
+      <section id="booking">
+        <h2>Book Your Stay</h2>
+        <p class="section-intro">
+          Select a room and book your stay at our luxurious resort.
+        </p>
+
+        <form id="booking-form">
+          <!-- Name Field -->
+          <article class="name-selection">
+            <label for="name">Full Name:&#42;</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </article>
+
+          <!-- Email Field -->
+          <article class="email-selection">
+            <label for="email">Email Address:&#42;</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </article>
+
+          <!-- Phone Number Field -->
+          <article class="phone-selection">
+            <label for="phone">Phone Number:&#42;</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </article>
+
+          <!-- Room Selection -->
+          <article class="room-selection">
+            <label for="room-type">Select Room:</label>
+            <select id="room-type" name="room-type" required>
+              <option value="Deluxe Room">Deluxe Room</option>
+              <option value="Standard Room">Standard Room</option>
+              <option value="Suite">Suite</option>
+              <option value="Penthouse">Penthouse</option>
+            </select>
+          </article>
+
+          <!-- Date Selection -->
+          <article class="date-selection">
+            <label for="check-in">Check-in Date:&#42;</label>
+            <input type="date" id="check-in" name="check-in" required />
+
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required />
+          </article>
+
+          <!-- Guest Selection -->
+          <article class="guest-selection">
+            <label for="guests">Number of Guests:&#42;</label>
+            <input
+              type="number"
+              id="guests"
+              name="guests"
+              min="1"
+              max="10"
+              required
+            />
+          </article>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-primary">Book Now</button>
         </form>
       </section>
 
-      <section id="testimonials" class="section">
+      <!--Events and fun activities-->
+      <section id="events">
+        <h2>Events & Fun Activities</h2>
+        <p class="section-intro">
+          Experience the best of African hospitality through our curated events
+          and thrilling activities.
+        </p>
+
+        <article class="events-grid">
+          <article class="event-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636572/cultural_nights.a_dajkxf.webp"
+              alt="Cultural Night"
+              loading="lazy"
+            />
+            <h3>Cultural Nights</h3>
+            <p>
+              Enjoy traditional African dances, music, and storytelling by the
+              bonfire under the stars.
+            </p>
+          </article>
+
+          <article class="event-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636564/beachgames_dzgcrv.webp"
+              alt="Beach Games"
+              loading="lazy"
+            />
+            <h3>Beach Games</h3>
+            <p>
+              Participate in beach volleyball, tug of war, and sandcastle
+              contests with fellow guests.
+            </p>
+          </article>
+
+          <article class="event-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636594/nature_walks.a_lmvufs.webp"
+              alt="Nature Walks"
+              loading="lazy"
+            />
+            <h3>Nature Walks</h3>
+            <p>
+              Guided nature walks to explore the local flora, fauna, and hidden
+              natural gems around the resort.
+            </p>
+          </article>
+
+          <article class="event-card">
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/v1746636604/sunset_cruises.a_cuyc7n.webp"
+              alt="Sunset Cruise"
+              loading="lazy"
+            />
+            <h3>Sunset Cruises</h3>
+            <p>
+              Take a romantic sunset cruise along the coast with drinks, music,
+              and stunning views.
+            </p>
+          </article>
+        </article>
+      </section>
+      <!--Testimonials section-->
+      <section id="testimonials">
         <h2>What Our Guests Say</h2>
-        <section class="carousel">
-          <blockquote class="testimonial">
-            <img
-              src="https://i.pravatar.cc/100?img=5"
-              alt="Sarah"
-              class="profile-img"
-            />
-            <p>“Amazing experience!”</p>
-            <cite>– Sarah</cite>
-          </blockquote>
+        <p class="section-intro">
+          Real experiences from happy clients who stayed with us.
+        </p>
 
-          <blockquote class="testimonial">
-            <img
-              src="https://i.pravatar.cc/100?img=7"
-              alt="John"
-              class="profile-img"
-            />
-            <p>“Five stars all the way!”</p>
-            <cite>– John</cite>
-          </blockquote>
+        <article class="testimonial-slider">
+          <article class="testimonial active">
+            <img src="images/guest1.jpg" alt="Jane Mwangi" loading="lazy" />
+            <h3>Jane Mwangi</h3>
+            <aside class="guest-title">Nairobi, Kenya</aside>
+            <p>
+              "An unforgettable experience! The rooms were spotless, food was
+              delicious, and the beach view was breathtaking. Definitely coming
+              back!"
+            </p>
+          </article>
 
-          <blockquote class="testimonial">
-            <img
-              src="https://i.pravatar.cc/100?img=12"
-              alt="Aisha"
-              class="profile-img"
-            />
-            <p>“Unforgettable moments.”</p>
-            <cite>– Aisha</cite>
-          </blockquote>
-        </section>
+          <article class="testimonial">
+            <img src="images/guest2.jpg" alt="Michael Otieno" loading="lazy" />
+            <h3>Michael Otieno</h3>
+            <aside class="guest-title">Kisumu, Kenya</aside>
+            <p>
+              "Perfect family getaway. My kids loved the activities, and the
+              staff treated us like royalty. Highly recommend their family
+              package!"
+            </p>
+          </article>
+
+          <article class="testimonial">
+            <img src="images/guest3.jpg" alt="Linda Achieng" loading="lazy" />
+            <h3>Linda Achieng</h3>
+            <aside class="guest-title">Mombasa, Kenya</aside>
+            <p>
+              "The spa and wellness retreat helped me completely unwind. The
+              yoga sessions by the ocean were a dream!"
+            </p>
+          </article>
+        </article>
       </section>
-
-      <section id="gallery" class="section">
-        <h2>Our Gallery</h2>
-        <section class="gallery-lightbox">
-          <article class="gallery-item">
-            <figure>
-              <img
-                src="oceanview.jpg"
-                alt="Luxury Room with Ocean View"
-                class="lightbox-img"
-              />
-              <figcaption>
-                Luxury Room with Ocean View - Experience comfort and elegance in
-                our deluxe rooms with breathtaking views of the ocean.
-              </figcaption>
-            </figure>
-          </article>
-          <article class="gallery-item">
-            <figure>
-              <img
-                src="sunset.jpg"
-                alt="Beachfront Resort Sunset"
-                class="lightbox-img"
-              />
-              <figcaption>
-                Beachfront Resort Sunset - Watch the sun set over the horizon,
-                creating a serene and peaceful atmosphere for our guests.
-              </figcaption>
-            </figure>
-          </article>
-          <article class="gallery-item">
-            <figure>
-              <img
-                src="spa.jpg"
-                alt="Spa and Wellness Center"
-                class="lightbox-img"
-              />
-              <figcaption>
-                Spa and Wellness Center - Indulge in luxurious spa treatments
-                designed to rejuvenate your body and soul.
-              </figcaption>
-            </figure>
-          </article>
-          <article class="gallery-item">
-            <figure>
-              <img
-                src="dining.jpg"
-                alt="Fine Dining Experience"
-                class="lightbox-img"
-              />
-              <figcaption>
-                Fine Dining Experience - Savor exquisite meals prepared by
-                world-class chefs, offering an unforgettable culinary journey.
-              </figcaption>
-            </figure>
-          </article>
-        </section>
-      </section>
-      <section id="contact" class="section">
-        <h2>Find Us</h2>
-        <address>
-          <p>
-            <i class="fa-solid fa-location-dot"></i>
-            <strong>Location:</strong> 123 Paradise Lane, Beach City, Tropical
-            Island
-          </p>
-          <p>
-            <i class="fa-solid fa-phone"></i>
-            <strong>Phone:</strong>
-            <a href="tel:+254790342156">+254-790-342-156</a>
-          </p>
-          <p>
-            <i class="fa-solid fa-envelope"></i>
-            <strong>Email:</strong>
-            <a href="mailto:info@tropicalbliss.com">
-              munenecollins.dev@gmail.com</a
-            >
-          </p>
-        </address>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.32335424496!2d36.84739685000001!3d-1.3032089500000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1744704341616!5m2!1sen!2ske"
-          width="100%"
-          height="300"
-          style="border: 0; border-radius: 8px"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
+      <section id="location">
+        <h2>Our Location</h2>
+        <article class="location-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.653746377862!2d37.453944!3d-0.5204070000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18262d16ef1aa3f1%3A0x2475ede27aed793!2sIzaak%20Walton%20Inn!5e0!3m2!1sen!2ske!4v1746605175182!5m2!1sen!2ske"
+            width="100%"
+            height="400"
+            style="border: 0; border-radius: 8px"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </article>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2025 Tropical Bliss Resort. All rights reserved.</p>
-      <nav class="socials">
-        <a href="https://www.facebook.com/tropicalbliss" target="_blank"
-          ><i class="fab fa-facebook"></i>Facebook</a
-        >
-        <a href="https://twitter.com/tropicalbliss" target="_blank"
-          ><i class="fab fa-twitter"></i>Twitter</a
-        >
-        <a href="https://www.instagram.com/tropicalbliss" target="_blank"
-          ><i class="fab fa-instagram"></i>Instagram</a
-        >
-        <a href="https://www.linkedin.com/company/tropicalbliss" target="_blank"
-          ><i class="fab fa-linkedin"></i>LinkedIn</a
-        >
-      </nav>
-    </footer>
+    <footer id="resort-footer">
+      <section class="footer-container">
+        <article class="footer-about">
+          <h3>Tropical Bliss Resort</h3>
+          <p>
+            Your ultimate getaway destination in Africa. Experience luxury,
+            nature, and culture in one place.
+          </p>
+        </article>
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("CcAtz8ydslI-FLsgP"); // Replace with your own Public Key
-      })();
-    </script>
+        <article class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#accommodation">Accommodation</a></li>
+            <li><a href="#booking">Book a Room</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </article>
+
+        <section class="footer-contact" id="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Email: info@tropicalbliss.com</p>
+          <p>Phone: +254 712 345 678</p>
+          <article class="footer-socials">
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://wa.me/254712345678" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </article>
+        </section>
+      </section>
+
+      <section class="footer-bottom">
+        <a href="#hero"><i class="fa-solid fa-house">Back to top</i></a>
+        <p>&copy; 2025 Tropical Bliss Resort. All rights reserved.</p>
+      </section>
+    </footer>
 
     <script src="script.js"></script>
   </body>
