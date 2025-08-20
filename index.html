@@ -348,7 +348,6 @@
           </article>
         </article>
       </section>
-
       <!--Booking Section-->
       <form
         id="booking-form"
@@ -371,12 +370,19 @@
         <input type="tel" id="phone" name="phone" required />
 
         <!-- Room -->
-        <label for="room-type">Select Room:</label>
         <select id="room-type" name="room-type" required>
-          <option value="Deluxe Ocean View">Deluxe Ocean View</option>
-          <option value="Private Villa">Private Villa</option>
-          <option value="Family Suite">Family Suite</option>
-          <option value="Penthouse">Penthouse</option>
+          <option value="Deluxe Ocean View" data-price="1500">
+            Deluxe Ocean View - 1500/Night
+          </option>
+          <option value="Private Villa" data-price="3000">
+            Private Villa - 3000/Night
+          </option>
+          <option value="Family Suite" data-price="4000">
+            Family Suite - 4000/Night
+          </option>
+          <option value="Penthouse" data-price="5000">
+            Penthouse - 5000/Night
+          </option>
         </select>
 
         <!-- Dates -->
@@ -531,14 +537,14 @@
         <h2>Our Location</h2>
         <article class="location-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.653746377862!2d37.453944!3d-0.5204070000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18262d16ef1aa3f1%3A0x2475ede27aed793!2sIzaak%20Walton%20Inn!5e0!3m2!1sen!2ske!4v1746605175182!5m2!1sen!2ske"
-            width="100%"
-            height="400"
-            style="border: 0; border-radius: 8px"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5704.465805031224!2d40.90119528720482!3d-2.268932234932371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1817193fab651595%3A0x7dd791cc38ba2835!2sLamu!5e0!3m2!1sen!2ske!4v1755693118043!5m2!1sen!2ske"
+            width="600"
+            height="450"
+            style="border: 0"
             allowfullscreen=""
             loading="lazy"
-          >
-          </iframe>
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </article>
       </section>
     </main>
